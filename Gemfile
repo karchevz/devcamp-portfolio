@@ -48,6 +48,7 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'hirb'  
   gem 'friendly_id', '~> 5.1.0' # Note: You MUST use 5.0.0 or greater for Rails 4.0+
+  gem 'devise', '~>4.2'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
