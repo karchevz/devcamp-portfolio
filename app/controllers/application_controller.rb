@@ -3,9 +3,14 @@ class ApplicationController < ActionController::Base
   include DeviseWhitelist 
   include SetSource
 
-  before_action :set_source
-
-  def set_source
-    session[:source] = params[:q] if params[:q] 
+  def current_user
+    super
   end
+
+  #below is actions for adding params search query
+  #before_action :set_source
+
+  #def set_source
+  #  session[:source] = params[:q] if params[:q] 
+  #end
 end
