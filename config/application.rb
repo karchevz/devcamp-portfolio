@@ -27,5 +27,9 @@ module DevcampPortfolio
 
     # Don't generate system test files.
     config.generators.system_tests = nil
+
+    #Override parameter white list - added just for testing. To be never added
+    #config.action_controller.permit_all_parameters = true
+
   end
 end
