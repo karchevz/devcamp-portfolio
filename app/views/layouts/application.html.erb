@@ -6,10 +6,15 @@
 
     <meta name="keywords" content="<%=@seo_keywords %>"/>
 
+    <!-- below bootstrap link allows for customization with bootstrap syles -->
+    <%= stylesheet_link_tag "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" %>
+
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
+  <!-- this is an example of cache -->
+  <% cache do %>
   <body>
     
     <p class="notice"><%= notice %></p>
@@ -23,6 +28,8 @@
     <%= yield %>    
 
      <%= source_helper("application") %>    
+
+  <% end %>
     
   </body>
 </html>
