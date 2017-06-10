@@ -13,6 +13,9 @@
  *require_tree .
  *require_self
  */
-.top a {
-  color: green;
-}
+
+
+/* Custom bootstrap variables must be set or imported *before* bootstrap. */
+
+@import "bootstrap";
+
