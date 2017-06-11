@@ -59,3 +59,5 @@ gem 'bootstrap', git: 'https://github.com/twbs/bootstrap-rubygem'
 
 gem 'jquery-rails'
 
+gem 'zero_devcamp_view_tool', git: 'https://github.com/karchevz/zero_devcamp_view_tool'
+

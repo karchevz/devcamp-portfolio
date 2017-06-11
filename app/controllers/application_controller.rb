@@ -10,5 +10,6 @@ class ApplicationController < ActionController::Base
 
   #def set_source
   #  session[:source] = params[:q] if params[:q] 
-  #end
+  #end  
 end
+

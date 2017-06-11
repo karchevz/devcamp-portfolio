@@ -1,4 +1,10 @@
 GIT
+  remote: https://github.com/karchevz/zero_devcamp_view_tool
+  revision: 6022a1f51b4cf695968382b02c1c882e37bba962
+  specs:
+    zero_devcamp_view_tool (0.1.0)
+
+GIT
   remote: https://github.com/twbs/bootstrap-rubygem
   revision: 7cdeca9a0e8db3bb7548d9fa5bdaad9b644fca32
   specs:
@@ -213,6 +219,7 @@ DEPENDENCIES
   tzinfo-data
   uglifier (>= 1.3.0)
   web-console (>= 3.3.0)
+  zero_devcamp_view_tool!
 
 BUNDLED WITH
    1.14.6
