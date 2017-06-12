@@ -61,3 +61,4 @@ gem 'jquery-rails'
 
 gem 'zero_devcamp_view_tool', git: 'https://github.com/karchevz/zero_devcamp_view_tool'
 
+gem 'petergate', '~>1.7'
