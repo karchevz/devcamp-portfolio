@@ -16,23 +16,20 @@
 
   <!-- this is an example of cache -->
   <% cache do %>
-  <body>
-    
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
+    <body>      
+      <div class="site-wrapper">
+        <div class="site-wrapper-inner">
+          <div class="cover-container">
 
-    <%= render "shared/nav", location: 'top' %>   
+            <%= render "shared/application_nav" %> 
+            <%= login_helper %>
+            <%= yield %> 
+            <%= copyright_generator %>  
+            <%= source_helper("application") %> 
 
-    <%= login_helper %>
-
-
-    <%= yield %> 
-
-    <%= copyright_generator %>   
-
-     <%= source_helper("application") %>    
-
-  <% end %>
-    
-  </body>
+          </div>
+        </div>
+      </div> 
+    </body>
+  <% end %>      
 </html>
