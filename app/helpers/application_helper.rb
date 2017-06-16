@@ -4,7 +4,7 @@ module ApplicationHelper
     content_tag(:div, "My contnent", class: "my-class")
   end
 
-  def login_helper style
+  def login_helper style = ''
     if current_user.is_a?(GuestUser)
       (link_to 'Login', new_user_session_path, class: style) + 
       " ".html_safe +
