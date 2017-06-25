@@ -1,8 +1,17 @@
-<p id="notice"><%= notice %></p>
+<div class="col-sm-8 blog-main">
+  
+  <%= paginate @blogs %> 
+  
+  <%= render @blogs %> 
 
-<h1>Blogs</h1>
+</div><!-- /.blog-main -->
 
-<table>
+  
+<!-- <p id="notice"><%= notice %></p>
+
+<h1>Blogs</h1> -->
+
+<!-- <table>
   <thead>
     <tr>
       <th>Title</th>
@@ -10,20 +19,19 @@
       <th>Body</th>
       <th colspan="4"></th>
     </tr>
-  </thead>
+  </thead> -->
 
-  <tbody>
+  <!-- <tbody> -->
   <!-- it is not needed to say partial: @blogs if trying to just pring the blogs but because I added spacer_template it is needed to specify it is a partial -->
-    <%= render partial: @blogs, spacer_template: 'blog_ruler' %>  
+   <!--  <%= render partial: @blogs, spacer_template: 'blog_ruler' %>   -->
 
   <!-- another possible syntax; a more explicit option -->
   <!-- <%= render partial: 'blog', collection: @blogs, spacer_template: 'blog_ruler' %> --> 
 
-  <!-- this is the original form 
-    <%= render @blogs %> --> 
-  </tbody>
-</table>
+  <!-- this is the original form -->
+    
+<!--   </tbody> -->
+<!-- </table> -->
 
-<br>
 
-<%= link_to 'New Blog', new_blog_path %>
+

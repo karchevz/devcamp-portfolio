@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title><%= @page_title %></title>
     <%= csrf_meta_tags %>
 
@@ -14,23 +16,22 @@
 
   <!-- this is an example of cache -->
   <% cache do %>
-  <body>
-    
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
+    <body>      
+      <div class="site-wrapper">
+        <div class="site-wrapper-inner">
+          <div class="cover-container">
 
-    <%= render "shared/nav", location: 'top' %>   
+            <%= render "shared/application_nav" %> 
+            
+            <%= yield %> 
 
-    <%= login_helper %>
+            <%= render "shared/application_footer" %>            
+              
+            <%= source_helper("application") %> 
 
-
-    <%= yield %> 
-
-    <%= copyright_generator %>   
-
-     <%= source_helper("application") %>    
-
-  <% end %>
-    
-  </body>
+          </div>
+        </div>
+      </div> 
+    </body>
+  <% end %>      
 </html>

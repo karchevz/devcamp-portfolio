@@ -1,27 +1,42 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-7">
+      <%= image_tag @portfolio_item.main_image %>
+    </div>
 
-<%= image_tag @portfolio_item.main_image %>
+    <div class="col-md-4">
+      <h1><%= @portfolio_item.title %></h1>
 
-<h1><%= @portfolio_item.title %></h1>
+      <em><%= @portfolio_item.subtitle %></em>
 
-<em><%= @portfolio_item.subtitle %></em>
+      <p><%= @portfolio_item.body %></p>
 
-<p><%= @portfolio_item.body %></p>
+      <h2>Technologies Used:</h2>
 
-<h2>Technologies Used:</h2>
+      <% @portfolio_item.technologies.each do |t| %>
 
-<% @portfolio_item.technologies.each do |t| %>
+        <ul>
+          <li><%= t.name %></li>
+        </ul>
 
-  <ul>
-    <li><%= t.name %></li>
-  </ul>
+      <% end %>
 
-<% end %>
+    </div>
+  </div>
+</div>
 
-<hr>
 
-<%= params.inspect %>
 
-<hr>
+
+
+
+
+
+
+
+<!-- <%= params.inspect %> -->
+
+
 
 <!--<%= session.inspect %> -->
 
