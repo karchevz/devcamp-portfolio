@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 <div class="card-margin">  
   <div class="card">
@@ -8,6 +9,15 @@
 
             <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
             
+=======
+<div class="card">
+  <div class="card-block">
+    <div class="row">
+      <div class="col-md-8">
+        <h2>Edit <%= resource_name.to_s.humanize %></h2>
+    
+          <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
+>>>>>>> d9ac59bad4e94b57160610617dfc83560657564d
             <%= devise_error_messages! %>
 
             <div class="form-group">
@@ -43,6 +53,7 @@
               <%= f.password_field :current_password, autocomplete: "off", class: 'form-control' %>
             </div>
 
+<<<<<<< HEAD
             <div class="actions">
               <%= f.submit "Update", class: 'btn btn-primary' %>
             </div>
@@ -60,8 +71,31 @@
       <div class="auth-links">
         <%= link_to "Back", :back %>
       </div>      
+=======
+            <div class="form-group">
+              <%= f.submit "Update", class: 'btn btn-primary' %>
+            </div>
+          <% end %>
+      </div>
+
+      <div class="col-md-4">
+        <h3>Cancel my account</h3>
+
+        <p>Unhappy? <%= button_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete, class: 'btn btn-danger' %></p>
+      </div>
+    </div>
+    
+    <div class="auth-links">
+      <%= link_to "Back", :back %>
+>>>>>>> d9ac59bad4e94b57160610617dfc83560657564d
     </div>
   </div>
 </div>
 
 
+<<<<<<< HEAD
+=======
+
+
+
+>>>>>>> d9ac59bad4e94b57160610617dfc83560657564d

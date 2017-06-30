@@ -8,8 +8,12 @@ unless defined?(Spring)
   require 'bundler'
 
   lockfile = Bundler::LockfileParser.new(Bundler.default_lockfile.read)
+<<<<<<< HEAD
   spring = lockfile.specs.detect { |spec| spec.name == "spring" }
   if spring
+=======
+  if spring = lockfile.specs.detect { |spec| spec.name == "spring" }
+>>>>>>> d9ac59bad4e94b57160610617dfc83560657564d
     Gem.use_paths Gem.dir, Bundler.bundle_path.to_s, *Gem.path
     gem 'spring', spring.version
     require 'spring/binstub'

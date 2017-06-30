@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<<<<<<< HEAD
     <title><%= @page_title %></title>
     <%= csrf_meta_tags %>
 
@@ -10,10 +11,23 @@
 
     <!-- below bootstrap link allows for customization with bootstrap syles -->
     
+=======
+
+    <title><%= @page_title %></title>
+    <%= csrf_meta_tags %>
+
+    <link href="https://fonts.googleapis.com/css?family=Lato|Roboto+Slab" rel="stylesheet">
+
+    <meta name="keywords" content="<%= @seo_keywords %>" />
+
+    <%= favicon_link_tag 'favicons/favicon.ico' %>
+
+>>>>>>> d9ac59bad4e94b57160610617dfc83560657564d
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
+<<<<<<< HEAD
   <!-- this is an example of cache -->
   <% cache do %>
     <body>      
@@ -34,4 +48,33 @@
       </div> 
     </body>
   <% end %>      
+=======
+  <body>
+    <div class="site-wrapper">
+      <div class="site-wrapper-inner">
+        <div class="cover-container">
+
+          <%= video_tag(
+              'HardDrivePhotojpeg.mp4',
+              id: 'background',
+              autoplay: true,
+              loop: true,
+              muted: true,
+              poster: 'home_bg.png'
+            )
+            %>
+
+          <%= render "shared/application_nav" %>
+
+          <%= yield %>
+
+          <%= render "shared/application_footer" %>
+
+          <%= alerts %>
+
+        </div>
+      </div>
+    </div>
+  </body>
+>>>>>>> d9ac59bad4e94b57160610617dfc83560657564d
 </html>

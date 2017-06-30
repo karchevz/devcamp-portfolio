@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+<<<<<<< HEAD
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -8,12 +9,26 @@
     <%= csrf_meta_tags %>
 
     <meta name="keywords" content="<%=@seo_keywords %>"/>
+=======
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title><%= @page_title %></title>
+    <%= csrf_meta_tags %>
+
+    <link href="https://fonts.googleapis.com/css?family=Lato|Roboto+Slab" rel="stylesheet">
+
+    <meta name="keywords" content="<%= @seo_keywords %>" />
+
+    <%= favicon_link_tag 'favicons/favicon.ico' %>
+>>>>>>> d9ac59bad4e94b57160610617dfc83560657564d
 
     <%= stylesheet_link_tag    'blogs', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
+<<<<<<< HEAD
     
     
     <%= render 'shared/blog_nav' %>
@@ -40,5 +55,24 @@
       
     </div> 
     <!-- end of container and row element -->
+=======
+
+    <%= render 'shared/blog_nav' %>
+    <%= render 'shared/blog_masthead' %>
+
+    <div class="container">
+
+      <div class="row">
+
+        <%= yield %>
+
+        <%= render 'shared/blog_sidebar' %>
+      </div>
+
+      <%= render 'shared/blog_footer' %>
+
+      <%= alerts %>
+    </div>
+>>>>>>> d9ac59bad4e94b57160610617dfc83560657564d
   </body>
 </html>

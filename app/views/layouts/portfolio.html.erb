@@ -6,13 +6,20 @@
     <title><%= @page_title %></title>
     <%= csrf_meta_tags %>
 
+<<<<<<< HEAD
     <meta name="keywords" content="<%=@seo_keywords %>"/>
+=======
+    <meta name="keywords" content="<%= @seo_keywords %>" />
+
+    <%= favicon_link_tag 'favicons/favicon.ico' %>
+>>>>>>> d9ac59bad4e94b57160610617dfc83560657564d
 
     <%= stylesheet_link_tag    'portfolios', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
+<<<<<<< HEAD
     
     <!-- start of navigation -->
     <%= render 'shared/portfolio_nav' %>
@@ -34,5 +41,15 @@
 
     <%= source_helper ("application") %>   
     
+=======
+    <%= render 'shared/portfolio_nav' %>
+    <%= render 'shared/portfolio_masthead' unless logged_in?(:site_admin) %>
+
+    <%= yield %>
+
+    <%= render 'shared/portfolio_footer' %>
+
+    <%= alerts %>
+>>>>>>> d9ac59bad4e94b57160610617dfc83560657564d
   </body>
 </html>

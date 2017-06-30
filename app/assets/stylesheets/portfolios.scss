@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* Custom bootstrap variables must be set or imported *before* bootstrap. */
 
 @import "bootstrap";
@@ -5,6 +6,25 @@
 
 body {
   min-height: 75rem; /* Can be removed; just added for demo purposes */
+=======
+@import "bootstrap";
+@import "jquery-ui";
+@import "gritter";
+
+@font-face {
+  font-family: 'Lato';
+  src:font-url('Lato-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Roboto Slab';
+  src:font-url('RobotoSlab-Regular.ttf');
+}
+
+body {
+  min-height: 75rem; /* Can be removed; just added for demo purposes */
+  font-family: 'Lato', sans-serif;
+>>>>>>> d9ac59bad4e94b57160610617dfc83560657564d
 }
 
 .navbar {
@@ -37,9 +57,25 @@ body {
   background-color: #f7f7f7;
 }
 
+<<<<<<< HEAD
 .card {
   float: left;
   width: 33.333%;
+=======
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  font-family: 'Roboto Slab', serif;
+}
+
+.card {
+  float: left;
+  width: 100%;
+>>>>>>> d9ac59bad4e94b57160610617dfc83560657564d
   padding: .75rem;
   margin-bottom: 2rem;
   border: 0;
@@ -62,9 +98,27 @@ footer p {
   margin-bottom: .25rem;
 }
 
+<<<<<<< HEAD
 
 /*Custome styles*/
 
 .portfolio-form {
   padding: 20px;
+=======
+/* Custom styles */
+
+.portfolio-container {
+  padding-top: 30px;
+}
+
+.portfolio-box{
+  border : 2px solid transparent;    
+  -webkit-transition : border 500ms ease-out; 
+  -moz-transition : border 500ms ease-out;
+  -o-transition : border 500ms ease-out;
+}
+
+.portfolio-box:hover{
+  border : 2px solid #d3d3d3;
+>>>>>>> d9ac59bad4e94b57160610617dfc83560657564d
 }

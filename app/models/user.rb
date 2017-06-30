@@ -13,6 +13,7 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 
+<<<<<<< HEAD
 validates_presence_of :name
 
 =begin
@@ -34,12 +35,21 @@ end
  
   def first_name
     self.name.split.first 
+=======
+  validates_presence_of :name
+
+  has_many :comments, dependent: :destroy
+
+  def first_name
+    self.name.split.first
+>>>>>>> d9ac59bad4e94b57160610617dfc83560657564d
   end
 
   def last_name
     self.name.split.last
   end
 end
+<<<<<<< HEAD
 
 #below is an example of how to connect to FB
 
@@ -53,3 +63,5 @@ def get_facebook_messages
 end
 
 
+=======
+>>>>>>> d9ac59bad4e94b57160610617dfc83560657564d

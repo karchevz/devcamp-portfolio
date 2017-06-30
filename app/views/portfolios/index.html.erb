@@ -1,5 +1,6 @@
 <div class="album text-muted">
   <div class="container">
+<<<<<<< HEAD
 
     <div class="row <%= "sortable" if logged_in?(:site_admin) %>">    
 
@@ -8,3 +9,12 @@
     </div>
   </div>
 </div>
+=======
+    <%= source_helper("alert alert-warning") %>
+
+    <div class="row <%= "sortable" if logged_in?(:site_admin) %>">
+      <%= render partial: 'portfolio_item', collection: @portfolio_items %>
+    </div>
+  </div>
+</div>
+>>>>>>> d9ac59bad4e94b57160610617dfc83560657564d

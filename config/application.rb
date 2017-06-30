@@ -18,6 +18,7 @@ Bundler.require(*Rails.groups)
 
 module DevcampPortfolio
   class Application < Rails::Application
+<<<<<<< HEAD
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 5.1
 
@@ -31,5 +32,9 @@ module DevcampPortfolio
     #Override parameter white list - added just for testing. To be never added
     #config.action_controller.permit_all_parameters = true
 
+=======
+    config.eager_load_paths << "#{Rails.root}/lib"
+    config.secret_key_base = ENV["SECRET_KEY_BASE"]
+>>>>>>> d9ac59bad4e94b57160610617dfc83560657564d
   end
 end

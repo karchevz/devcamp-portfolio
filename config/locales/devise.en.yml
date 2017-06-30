@@ -23,8 +23,11 @@ en:
         subject: "Reset password instructions"
       unlock_instructions:
         subject: "Unlock instructions"
+<<<<<<< HEAD
       email_changed:
         subject: "Email Changed"
+=======
+>>>>>>> d9ac59bad4e94b57160610617dfc83560657564d
       password_change:
         subject: "Password Changed"
     omniauth_callbacks:

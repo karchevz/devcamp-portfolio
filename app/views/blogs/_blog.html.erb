@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <div class="blog-post">
   <h2 class="blog-post-title"><%= link_to blog.title.upcase, blog %></h2>
   <p class="blog-post-meta">Published <%= distance_of_time_in_words(blog.created_at, Time.now) %> ago by <a href="#">Mark</a></p>
@@ -14,3 +15,16 @@
 
 
 
+=======
+<div class="blog-post blog-body">
+  <h2 class="blog-post-title"><%= link_to blog.title, blog %></h2>
+  <p class="blog-post-meta">Published <%= distance_of_time_in_words(blog.created_at, Time.now) %> ago</p>
+  
+  <%= render partial: 'blogs/admin_actions', locals: { blog: blog } %>
+
+  <p>
+    <%= truncate(markdown(blog.body), length: 600, escape: false) %>
+    <%= link_to "Continue reading", blog %>
+  </p>
+</div>
+>>>>>>> d9ac59bad4e94b57160610617dfc83560657564d

@@ -6,5 +6,9 @@ test:
 
 production:
   adapter: redis
+<<<<<<< HEAD
   url: redis://localhost:6379/1
   channel_prefix: DevcampPortfolio_production
+=======
+  url: <%= ENV["REDISCLOUD_URL"] %>
+>>>>>>> d9ac59bad4e94b57160610617dfc83560657564d
